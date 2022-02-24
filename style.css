@@ -1,4 +1,10 @@
-.container {
+.imgContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.titleContainer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -7,11 +13,17 @@
 h1 {
     font-family: fantasy;
     font-size: 3em;
-    border-bottom: 2px solid pink;
-    border-right: 2px solid pink;
+    border-bottom: 2px solid lightblue;
+    border-right: 2px solid lightblue;
+    border-left: 2px solid lightblue;
     width: 400px;
     text-align: center;
-    box-shadow: 4px 4px 5px rgb(161, 84, 110);
+    box-shadow: 4px 4px 5px rgb(65, 117, 150);
+    transition: all 300ms;
+}
+
+h1:hover {
+    transform: scale(1.05);
 }
 
 img {
